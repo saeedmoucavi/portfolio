@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0E1116">
+
+<!-- These two lines are a fallback for search engines. The real values are
+     taken from content.json ("site" > "pageTitle" / "metaDescription"). -->
+<title>Saeed Mousavi — Industrial Machinery Design Engineer</title>
+<meta name="description" content="Mechanical engineer specialising in the design and fabrication of industrial production machinery, custom equipment and factory automation mechanisms.">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="/">
+
+<!-- Fonts: Space Grotesk (headings), Inter (body), JetBrains Mono (technical
+     labels), Vazirmatn (Persian). Loaded from Google's free font service. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Vazirmatn:wght@400;500;700&display=swap">
+
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- The whole site is drawn here by assets/js/main.js from content.json. -->
+<div id="app" aria-busy="true"></div>
+
+<noscript>
+  <div style="padding:3rem;font-family:system-ui;color:#E9ECF1;background:#0E1116;min-height:100vh">
+    <h1>Saeed Mousavi — Mechanical Engineer</h1>
+    <p>This website needs JavaScript enabled in your browser. Please turn it on and reload the page.</p>
+  </div>
+</noscript>
+
+<!--
+  HIDDEN FORM — DO NOT DELETE.
+  Netlify scans the raw HTML of the page to discover contact forms. Because the
+  visible form is drawn by JavaScript, Netlify would never see it. This hidden
+  copy is what registers the form with Netlify. The visible form posts to it.
+-->
+<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name">
+  <input type="email" name="email">
+  <input type="text" name="company">
+  <textarea name="message"></textarea>
+</form>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
