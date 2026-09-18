@@ -253,8 +253,8 @@
     ]
   },
   "site": {
-    "brandInitials": "SM",
-    "defaultLanguage": "fa",
+    "brandInitials": "MechEn",
+    "defaultLanguage": "en",
     "showLanguageToggle": true,
     "pageTitle": {
       "en": "Saeed Mousavi — Mechanical Engineer | Production Fixtures & Assembly Machines",
@@ -368,14 +368,14 @@
     ]
   },
   "theme": {
-    "colorSurfaceRaised": "#1C222B",
+    "colorSurfaceRaised": "#495f89",
     "cornerRadius": "4px",
-    "colorSurface": "#617da2",
+    "colorSurface": "#495f89",
     "colorAccent": "#F2A33C",
-    "colorBorder": "#2B333F",
+    "colorBorder": "#495f89",
     "colorBlueprint": "#4A90B8",
     "colorText": "#E9ECF1",
-    "colorBackground": "#8e98a9",
+    "colorBackground": "#495f89",
     "fontBody": "'Inter'",
     "enableAnimations": true,
     "fontMono": "'JetBrains Mono'",
