@@ -386,6 +386,21 @@ collections:
                     fields:
                       - { name: "en", label: "English", widget: "string" }
                       - { name: "fa", label: "Persian", widget: "string" }
+                  # --- IMAGES: right under the title so they are easy to find ---
+                  - { name: "cover", label: "📷 Cover image (the photo on the project card)", widget: "image" }
+                  - name: "gallery"
+                    label: "📷 Photo gallery (the images shown inside the project)"
+                    label_singular: "picture"
+                    widget: "list"
+                    summary: "{{fields.caption.en}}"
+                    fields:
+                      - { name: "image", label: "Picture — click to upload / replace", widget: "image" }
+                      - name: "caption"
+                        label: "Caption under the picture"
+                        widget: "object"
+                        fields:
+                          - { name: "en", label: "English", widget: "string" }
+                          - { name: "fa", label: "Persian", widget: "string" }
                   - name: "category"
                     label: "Category (creates the filter buttons)"
                     widget: "object"
@@ -442,18 +457,6 @@ collections:
                           - { name: "fa", label: "Persian", widget: "string" }
                       - name: "value"
                         label: "Value"
-                        widget: "object"
-                        fields:
-                          - { name: "en", label: "English", widget: "string" }
-                          - { name: "fa", label: "Persian", widget: "string" }
-                  - { name: "cover", label: "Cover image (shown on the card)", widget: "image" }
-                  - name: "gallery"
-                    label: "Photo gallery"
-                    widget: "list"
-                    fields:
-                      - { name: "image", label: "Picture", widget: "image" }
-                      - name: "caption"
-                        label: "Caption"
                         widget: "object"
                         fields:
                           - { name: "en", label: "English", widget: "string" }
