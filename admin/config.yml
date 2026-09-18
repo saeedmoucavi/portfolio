@@ -12,7 +12,7 @@ backend:
   name: github
   repo: saeedmoucavi/portfolio                       # your GitHub username / repo
   branch: main
-  base_url: https://YOUR-LOGIN-HELPER.workers.dev    # your Cloudflare Worker address
+  base_url: https://portfolio-login.saeedmoucavi.workers.dev   # your Cloudflare login helper
   # auth_endpoint: auth   # (default — leave commented unless the guide says otherwise)
 
 # Saves go straight to the live site. Change to "editorial_workflow" if you
