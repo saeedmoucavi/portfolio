@@ -252,11 +252,11 @@
           { "label": { "en": "Frame",     "fa": "شاسی" },       "value": { "en": "Aluminium profile + sheet panels", "fa": "پروفیل آلومینیوم و ورق" } },
           { "label": { "en": "Controls",  "fa": "کنترل" },      "value": { "en": "Two-hand start, E-stop",      "fa": "استارت دو دستی، استپ اضطراری" } }
         ],
-        "cover": "assets/images/projects/fan-bracket-render.jpg",
+        "cover": "assets/images/fan-bracket-render.jpg",
         "gallery": [
-          { "image": "assets/images/projects/fan-bracket-render.jpg",    "caption": { "en": "CAD model of the finished machine",                 "fa": "مدل سه‌بعدی دستگاه" } },
-          { "image": "assets/images/projects/fan-bracket-mechanism.jpg", "caption": { "en": "Exploded view of the internal pneumatic mechanism", "fa": "نمای انفجاری مکانیزم پنوماتیک داخلی" } },
-          { "image": "assets/images/projects/fan-bracket-built.jpg",     "caption": { "en": "The machine built and installed at the station",     "fa": "دستگاه ساخته‌شده و مستقر در ایستگاه" } }
+          { "image": "assets/images/fan-bracket-render.jpg",    "caption": { "en": "CAD model of the finished machine",                 "fa": "مدل سه‌بعدی دستگاه" } },
+          { "image": "assets/images/fan-bracket-mechanism.jpg", "caption": { "en": "Exploded view of the internal pneumatic mechanism", "fa": "نمای انفجاری مکانیزم پنوماتیک داخلی" } },
+          { "image": "assets/images/fan-bracket-built.jpg",     "caption": { "en": "The machine built and installed at the station",     "fa": "دستگاه ساخته‌شده و مستقر در ایستگاه" } }
         ]
       },
       {
@@ -297,10 +297,10 @@
           { "label": { "en": "Clamping",       "fa": "کلمپ" },        "value": { "en": "Pneumatic, form-matched supports", "fa": "پنوماتیک، تکیه‌گاه فرم‌دار" } },
           { "label": { "en": "Status",         "fa": "وضعیت" },       "value": { "en": "Delivered and in production", "fa": "تحویل‌شده و در حال تولید" } }
         ],
-        "cover": "assets/images/projects/double-side-press-render.jpg",
+        "cover": "assets/images/double-side-press-render.jpg",
         "gallery": [
-          { "image": "assets/images/projects/double-side-press-render.jpg", "caption": { "en": "CAD layout of the double-sided fixture between the two press units", "fa": "چیدمان سه‌بعدی فیکسچر دوطرفه بین دو یونیت پرس" } },
-          { "image": "assets/images/projects/end-forming-installed.jpg",    "caption": { "en": "Installed and running on the end-forming machine",                 "fa": "نصب‌شده و در حال کار روی دستگاه End forming" } }
+          { "image": "assets/images/double-side-press-render.jpg", "caption": { "en": "CAD layout of the double-sided fixture between the two press units", "fa": "چیدمان سه‌بعدی فیکسچر دوطرفه بین دو یونیت پرس" } },
+          { "image": "assets/images/end-forming-installed.jpg",    "caption": { "en": "Installed and running on the end-forming machine",                 "fa": "نصب‌شده و در حال کار روی دستگاه End forming" } }
         ]
       },
       {
@@ -341,9 +341,9 @@
           { "label": { "en": "Timeline", "fa": "بازهٔ اجرا" },"value": { "en": "Ordibehesht – Shahrivar 1405", "fa": "اردیبهشت تا شهریور ۱۴۰۵" } },
           { "label": { "en": "Status",   "fa": "وضعیت" },   "value": { "en": "In design", "fa": "در دست طراحی" } }
         ],
-        "cover": "assets/images/projects/respect-fixture-render.jpg",
+        "cover": "assets/images/respect-fixture-render.jpg",
         "gallery": [
-          { "image": "assets/images/projects/respect-fixture-render.jpg", "caption": { "en": "CAD model of the fixture on its workbench", "fa": "مدل سه‌بعدی فیکسچر روی میز کار" } }
+          { "image": "assets/images/respect-fixture-render.jpg", "caption": { "en": "CAD model of the fixture on its workbench", "fa": "مدل سه‌بعدی فیکسچر روی میز کار" } }
         ]
       },
       {
@@ -384,10 +384,10 @@
           { "label": { "en": "Verification", "fa": "صحه‌گذاری" },  "value": { "en": "CMM verified",                        "fa": "تأییدشده با CMM" } },
           { "label": { "en": "Covers",       "fa": "پوشش" },       "value": { "en": "Front and rear link",                 "fa": "لینک عقب و جلو" } }
         ],
-        "cover": "assets/images/projects/envoy-fixture-render.jpg",
+        "cover": "assets/images/envoy-fixture-render.jpg",
         "gallery": [
-          { "image": "assets/images/projects/envoy-fixture-render.jpg", "caption": { "en": "CAD model showing both link positions on one base plate", "fa": "مدل سه‌بعدی: هر دو موقعیت لینک روی یک پلیت" } },
-          { "image": "assets/images/projects/envoy-fixture-built.jpg",  "caption": { "en": "The finished fixture, tagged after CMM verification",     "fa": "فیکسچر ساخته‌شده، برچسب‌خورده پس از تأیید CMM" } }
+          { "image": "assets/images/envoy-fixture-render.jpg", "caption": { "en": "CAD model showing both link positions on one base plate", "fa": "مدل سه‌بعدی: هر دو موقعیت لینک روی یک پلیت" } },
+          { "image": "assets/images/envoy-fixture-built.jpg",  "caption": { "en": "The finished fixture, tagged after CMM verification",     "fa": "فیکسچر ساخته‌شده، برچسب‌خورده پس از تأیید CMM" } }
         ]
       },
       {
@@ -427,10 +427,10 @@
           { "label": { "en": "Rollers",   "fa": "رولرها" },   "value": { "en": "2 sets, steel & aluminium", "fa": "۲ مجموعه، آهن و آلومینیوم" } },
           { "label": { "en": "Benefit",   "fa": "دستاورد" },  "value": { "en": "Friction-free roll rotation", "fa": "چرخش بدون اصطکاک رول" } }
         ],
-        "cover": "assets/images/projects/airbag-stand-render.jpg",
+        "cover": "assets/images/airbag-stand-render.jpg",
         "gallery": [
-          { "image": "assets/images/projects/airbag-stand-render.jpg", "caption": { "en": "CAD model with the roll loaded",             "fa": "مدل سه‌بعدی همراه با رول" } },
-          { "image": "assets/images/projects/airbag-stand-built.jpg",  "caption": { "en": "The built stand showing the roller blocks", "fa": "استند ساخته‌شده و بلوک‌های رولر" } }
+          { "image": "assets/images/airbag-stand-render.jpg", "caption": { "en": "CAD model with the roll loaded",             "fa": "مدل سه‌بعدی همراه با رول" } },
+          { "image": "assets/images/airbag-stand-built.jpg",  "caption": { "en": "The built stand showing the roller blocks", "fa": "استند ساخته‌شده و بلوک‌های رولر" } }
         ]
       },
       {
@@ -470,9 +470,9 @@
           { "label": { "en": "Structure", "fa": "سازه" },      "value": { "en": "Welded steel frame",     "fa": "شاسی فولادی جوشی" } },
           { "label": { "en": "Purpose",   "fa": "هدف" },       "value": { "en": "Standards certification","fa": "اخذ گواهی استاندارد" } }
         ],
-        "cover": "assets/images/projects/dignity-test-fixture.jpg",
+        "cover": "assets/images/dignity-test-fixture.jpg",
         "gallery": [
-          { "image": "assets/images/projects/dignity-test-fixture.jpg", "caption": { "en": "The welded test fixture after painting", "fa": "فیکسچر تست جوشی پس از رنگ‌آمیزی" } }
+          { "image": "assets/images/dignity-test-fixture.jpg", "caption": { "en": "The welded test fixture after painting", "fa": "فیکسچر تست جوشی پس از رنگ‌آمیزی" } }
         ]
       },
       {
@@ -512,9 +512,9 @@
           { "label": { "en": "Cost",     "fa": "هزینه" },   "value": { "en": "Minimal — jaws only",                     "fa": "حداقلی — فقط فک‌ها" } },
           { "label": { "en": "Result",   "fa": "نتیجه" },   "value": { "en": "Sharply reduced cutting time",            "fa": "کاهش شدید زمان برش" } }
         ],
-        "cover": "assets/images/projects/tube-saw-jaws.jpg",
+        "cover": "assets/images/tube-saw-jaws.jpg",
         "gallery": [
-          { "image": "assets/images/projects/tube-saw-jaws.jpg", "caption": { "en": "The new jaws holding a full polygonal tube bundle in the saw", "fa": "فک‌های جدید در حال نگه‌داشتن بندیل چندضلعی لوله در اره" } }
+          { "image": "assets/images/tube-saw-jaws.jpg", "caption": { "en": "The new jaws holding a full polygonal tube bundle in the saw", "fa": "فک‌های جدید در حال نگه‌داشتن بندیل چندضلعی لوله در اره" } }
         ]
       },
       {
@@ -554,9 +554,9 @@
           { "label": { "en": "Provides", "fa": "امکانات" },    "value": { "en": "Lighting, tool holders, ventilation", "fa": "روشنایی، نگهدارندهٔ ابزار، تهویه" } },
           { "label": { "en": "Supports", "fa": "پشتیبانی از" },"value": { "en": "5S and dust control", "fa": "کنترل 5S و گردوغبار" } }
         ],
-        "cover": "assets/images/projects/laminating-station-render.jpg",
+        "cover": "assets/images/laminating-station-render.jpg",
         "gallery": [
-          { "image": "assets/images/projects/laminating-station-render.jpg", "caption": { "en": "CAD model of the enclosed station", "fa": "مدل سه‌بعدی ایستگاه محصور" } }
+          { "image": "assets/images/laminating-station-render.jpg", "caption": { "en": "CAD model of the enclosed station", "fa": "مدل سه‌بعدی ایستگاه محصور" } }
         ]
       },
       {
@@ -597,9 +597,9 @@
           { "label": { "en": "Deployed",  "fa": "محل استقرار" }, "value": { "en": "6 production areas", "fa": "۶ ناحیهٔ تولیدی" } },
           { "label": { "en": "Materials", "fa": "متریال" },      "value": { "en": "Aluminium profile & welded steel", "fa": "پروفیل آلومینیوم و فولاد جوشی" } }
         ],
-        "cover": "assets/images/projects/assembly-workbench-render.jpg",
+        "cover": "assets/images/assembly-workbench-render.jpg",
         "gallery": [
-          { "image": "assets/images/projects/assembly-workbench-render.jpg", "caption": { "en": "Standard modular assembly workbench", "fa": "میز کار مونتاژ مدولار استاندارد" } }
+          { "image": "assets/images/assembly-workbench-render.jpg", "caption": { "en": "Standard modular assembly workbench", "fa": "میز کار مونتاژ مدولار استاندارد" } }
         ]
       }
     ]
