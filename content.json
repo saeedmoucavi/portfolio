@@ -377,14 +377,14 @@
     "colorBorder": "#ffffff",
     "colorBlueprint": "#1D5E96",
     "colorText": "#16191F",
-    "colorBackground": "#536878",
+    "colorBackground": "#c4d6e3",
     "fontBody": "'Inter'",
     "fontStylesheetUrl": "",
     "enableAnimations": true,
     "fontMono": "'IBM Plex Mono'",
     "fontDisplay": "'Archivo'",
     "colorAccentInk": "#FFFFFF",
-    "colorTextMuted": "#6A7280",
+    "colorTextMuted": "#ffffff",
     "showBlueprintGrid": true
   },
   "experience": {
