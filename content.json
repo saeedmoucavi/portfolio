@@ -634,7 +634,7 @@
   "sections": [
     {
       "key": "hero",
-      "enabled": false,
+      "enabled": true,
       "showInNav": false,
       "navLabel": {
         "en": "Home",
