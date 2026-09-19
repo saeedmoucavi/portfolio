@@ -82,6 +82,9 @@ collections:
               - { name: "fontDisplay",       label: "Heading font",          widget: "string" }
               - { name: "fontBody",          label: "Body font",             widget: "string" }
               - { name: "fontMono",          label: "Technical label font",  widget: "string" }
+              - { name: "fontDisplayFa",     label: "فونت تیترها (فارسی)",   widget: "string", required: false, hint: "مثلاً 'Vazirmatn' — خالی بگذارید تا از فونت لاتین استفاده شود" }
+              - { name: "fontBodyFa",        label: "فونت متن (فارسی)",      widget: "string", required: false, hint: "مثلاً 'Vazirmatn'" }
+              - { name: "fontStylesheetUrl", label: "آدرس فونت اضافه (https)", widget: "string", required: false, hint: "لینک embed از fonts.google.com یا هر CDN فونت دیگر" }
               - { name: "cornerRadius",      label: "Corner roundness",      widget: "string" }
               - { name: "showBlueprintGrid", label: "Show blueprint grid",   widget: "boolean" }
               - { name: "enableAnimations",  label: "Enable animations",     widget: "boolean" }

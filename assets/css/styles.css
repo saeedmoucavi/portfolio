@@ -35,7 +35,17 @@
   --dir: 1;
 }
 html[dir="rtl"] { --dir: -1; }
-html[lang="fa"] { --font-display: 'Vazirmatn', system-ui, sans-serif; --font-body: 'Vazirmatn', system-ui, sans-serif; }
+/* Fonts per language. These are the DEFAULTS; all four are overwritten at
+   runtime from content.json → theme (fontDisplay / fontBody for Latin,
+   fontDisplayFa / fontBodyFa for Persian). */
+:root {
+  --font-display-en: 'Archivo', system-ui, sans-serif;
+  --font-body-en: 'Inter', system-ui, sans-serif;
+  --font-display-fa: 'Vazirmatn', system-ui, sans-serif;
+  --font-body-fa: 'Vazirmatn', system-ui, sans-serif;
+}
+/* Fallback for when JavaScript has not run yet. */
+html[lang="fa"] { --font-display: var(--font-display-fa); --font-body: var(--font-body-fa); }
 
 /* ---------------------------------------------------------------- base */
 
@@ -70,8 +80,7 @@ html { scrollbar-width: thin; scrollbar-color: var(--border) var(--bg); }
 
 .mono { font-family: var(--font-mono); font-size: .76rem; letter-spacing: .06em; text-transform: uppercase; }
 html[lang="fa"] .mono { font-family: var(--font-body); letter-spacing: 0; text-transform: none; font-size: .85rem; }
-html[lang="fa"] h1, html[lang="fa"] h2, html[lang="fa"] h3, html[lang="fa"] h4,
-html[lang="fa"] .marquee { letter-spacing: 0 !important; }
+html[lang="fa"] h1, html[lang="fa"] h2, html[lang="fa"] h3, html[lang="fa"] h4 { letter-spacing: 0 !important; }
 
 .shell { width: 100%; max-width: var(--shell); margin-inline: auto; padding-inline: var(--gutter); }
 .skip-link { position: fixed; inset-inline-start: 1rem; top: -100px; z-index: 1000; background: var(--accent); color: var(--accent-ink); padding: .6rem 1rem; font-weight: 600; }
@@ -88,7 +97,10 @@ html[lang="fa"] .marquee { letter-spacing: 0 !important; }
   background-size: 96px 96px, 96px 96px, 12px 12px, 12px 12px;
 }
 html[data-grid="off"] .sheet-grid { display: none; }
-#app > *:not(.sheet-grid) { position: relative; z-index: 1; }
+/* Lift the page content above the fixed paper grid. Only these two are listed:
+   a wildcard here would override `position: fixed` on the header, the rack
+   progress bar, the wipe and the modal, and drop them into the normal flow. */
+#app > main, #app > .site-footer { position: relative; z-index: 1; }
 
 /* ------------------------------------------------------- mechanical parts */
 
@@ -123,29 +135,6 @@ html[dir="rtl"] .rack__travel { transform-origin: right; }
 }
 html[dir="rtl"] .rack__pinion { inset-inline-start: auto; inset-inline-end: 0; }
 .rack__pinion .part { width: 34px; height: 34px; stroke-width: 1.6; background: color-mix(in srgb, var(--bg) 80%, transparent); border-radius: 50%; }
-
-/* drafting cross-hair cursor */
-.cross { display: none; }
-html.has-cursor .cross { display: block; }
-html.has-cursor, html.has-cursor * { cursor: none !important; }
-.cross__h, .cross__v, .cross__ring, .cross__tag { position: fixed; z-index: 300; pointer-events: none; }
-.cross__h { top: 0; left: 0; width: 30px; height: 1px; background: var(--accent); transform: translate(calc(var(--cx) - 50%), var(--cy)); }
-.cross__v { top: 0; left: 0; width: 1px; height: 30px; background: var(--accent); transform: translate(var(--cx), calc(var(--cy) - 50%)); }
-.cross__ring {
-  top: 0; left: 0; width: 34px; height: 34px; border: 1px solid var(--blueprint); border-radius: 50%;
-  transform: translate(calc(var(--rx) - 50%), calc(var(--ry) - 50%));
-  transition: width .3s var(--ease), height .3s var(--ease), background-color .3s, border-color .3s;
-}
-.cross.is-hover .cross__ring { width: 52px; height: 52px; border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
-.cross.is-down .cross__ring { width: 24px; height: 24px; }
-.cross__tag {
-  top: 0; left: 0; padding: .3rem .55rem; background: var(--text); color: var(--bg);
-  font: 600 .62rem/1 var(--font-mono); letter-spacing: .12em;
-  transform: translate(calc(var(--rx) + 26px), calc(var(--ry) + 22px));
-  opacity: 0; transition: opacity .25s;
-}
-.cross.has-tag .cross__tag { opacity: 1; }
-.cross.is-hidden { opacity: 0; }
 
 /* plotter wipe used when the language changes */
 .wipe { position: fixed; inset: 0; z-index: 400; pointer-events: none; overflow: hidden; }
@@ -430,19 +419,6 @@ html.is-ready .hero [data-intro] { opacity: 1; translate: none; }
 .hero__scroll-nut { position: absolute; inset-inline-start: -5px; top: 0; width: 24px; height: 24px; color: var(--accent); animation: nutRun 2.4s var(--ease-io) infinite; }
 .hero__scroll-nut .part { width: 24px; height: 24px; background: var(--bg); }
 @keyframes nutRun { 0% { transform: translateY(0) rotate(0); opacity: 0; } 15% { opacity: 1; } 85% { opacity: 1; } 100% { transform: translateY(40px) rotate(180deg); opacity: 0; } }
-
-/* ---------------------------------------------------------------- marquee */
-
-.marquee { position: relative; overflow: hidden; padding-block: 1.1rem; direction: ltr; border-block: 1.5px solid var(--text); background: var(--surface-2); }
-.marquee__track { display: flex; width: max-content; will-change: transform; align-items: center; }
-.marquee__group { display: flex; align-items: center; flex: none; }
-.marquee__item { font: 700 clamp(1.5rem, 3.6vw, 3rem)/1 var(--font-display); letter-spacing: -.02em; padding-inline: 1.6rem; white-space: nowrap; text-transform: uppercase; }
-html[lang="fa"] .marquee__item { direction: rtl; text-transform: none; font-weight: 800; }
-.marquee__item:nth-child(4n+3) { color: var(--accent); }
-.marquee .part--nut { width: 1.6rem; height: 1.6rem; color: var(--blueprint); animation: spin 5s linear infinite; }
-.marquee--alt { background: var(--text); color: var(--bg); border-color: var(--text); }
-.marquee--alt .marquee__item:nth-child(4n+3) { color: var(--accent); }
-.marquee--alt .part--nut { color: var(--bg); }
 
 /* ---------------------------------------------------------------- stats */
 
@@ -775,7 +751,6 @@ html[lang="fa"] .detail-block > p:not(.detail-block__label) { line-height: 2; }
   .filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(var(--gutter) * -1); padding: 2px var(--gutter); }
   .filters::-webkit-scrollbar { display: none; }
   .filter { flex: none; white-space: nowrap; }
-  .marquee__item { padding-inline: 1rem; }
   .stat { flex-direction: column; align-items: flex-start; gap: .6rem; }
   .gauge { width: 62px; height: 62px; }
 }
@@ -803,7 +778,7 @@ html[data-anim="off"] .project-card__media img { clip-path: none !important; }
 /* ---------------------------------------------------------------- print */
 
 @media print {
-  .sheet-grid, .cross, .rack, .site-header, .hero__canvas, .marquee, .modal, .loader, .wipe, .hero__scroll, .cam-strip { display: none !important; }
+  .sheet-grid, .rack, .site-header, .hero__canvas, .modal, .loader, .wipe, .hero__scroll, .cam-strip { display: none !important; }
   body { background: #fff; }
   .reveal, .m-in, [data-intro] { opacity: 1 !important; translate: none !important; }
   .w__i, .ch__i { transform: none !important; }
